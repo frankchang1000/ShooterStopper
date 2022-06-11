@@ -1,0 +1,2 @@
+python main.py --dataset-path "data" --training-dir "training_dir-000" --model "efficientdet_d0" --debug False --precision "mixed_float16" --epochs 25 --batch-size 8 --learning-rate 0.0005 --optimizer "ADAM" --dataset-files "train.txt" --images-dir "Images" --labels-dir "Labels" --augment-ds True --save-mo
+del-frequency 5
