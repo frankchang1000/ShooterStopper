@@ -1,0 +1,39 @@
+.navbar {
+    width: 100%;
+    height: 110px;
+    background-color: #22303a;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar .leftSide {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;    
+  }
+  .navbar .farleft {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;    
+  }
+  .navbar .leftSide img {
+    width: 120px;
+  }
+  .navbar .farleft img {
+    width: 140px;
+  }
+  
+  
+  @media only screen and (min-width: 600px) {
+    .navbar .rightSide button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+  }
