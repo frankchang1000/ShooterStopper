@@ -27,7 +27,7 @@ With the numbers shootings in 2022 being absurdly high, we are targeting to redu
 
 
 ## Installation and Usage 🏳
-Before beginning installation, ShooterStopper wants to ensure the privacy of our users and want to highlight that we detect **objects rather than people.*
+Before beginning installation, ShooterStopper wants to ensure the privacy of our users and want to highlight that we detect **objects rather than people.**
 
 ## Accomplishments 🎆
 
