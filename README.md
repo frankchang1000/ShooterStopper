@@ -2,7 +2,7 @@
   <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/logo.png", width="500"/>
 </p>
 
-##Table of Contents:
+#Table of Contents:
 
 # ShooterStopper
 
