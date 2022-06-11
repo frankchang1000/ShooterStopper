@@ -1,0 +1,6 @@
+billete
+knife
+monedero
+pistol
+smartphone
+tarjeta
