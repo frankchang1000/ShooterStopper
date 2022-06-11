@@ -18,7 +18,7 @@ Because June 3rd is National Gun Violence Day, our team wanted to spread awarene
 <p align="center">
   <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/statisitics.png", width="800"/>
 </p>
-With the numbers shootings in 2022 being absurdly high, we are targeting to reduce the amount of casualties and injuries to reinforce the idea of going to a safe school for both the parents and the students.
+As the Everytown Research Organization conveys the absurd amount of shootings in the past decade, we are targeting to reduce the amount of casualties and injuries to reinforce the idea of going to school safely for both the parents and the students.
 
 
 
@@ -26,7 +26,7 @@ With the numbers shootings in 2022 being absurdly high, we are targeting to redu
 
 
 
-## Installation and Usage 🏳
+## Installation and Usage ✅
 Before beginning installation, ShooterStopper wants to ensure the privacy of our users and want to highlight that we detect **objects rather than people.**
 
 ## Accomplishments 🎆
