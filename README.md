@@ -31,5 +31,5 @@ Before beginning installation, ShooterStopper wants to ensure the privacy of our
 
 ## Accomplishments 🎆
 
-As school shootings have been a major conflict this decade, we are proud to create an efficent and working method to detect hand held weapons to prevent tragedies.
+As school shootings have been a major conflict this decade, we are proud to face this problem with an efficent and working method.
 
