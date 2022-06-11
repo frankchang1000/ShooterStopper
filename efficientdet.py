@@ -6,12 +6,13 @@ import tensorflow as tf
 
 from typing import Union
 
+from configs import *
 from utils.postprocess import FilterDetections
 from utils.visualize import draw_boxes
 from utils.file_reader import parse_label_file
 
-LABEL_DICT = parse_label_file("docs/labels.txt")
-MODEL = tf.keras.models.load_model("models/efficientdet-d0-shooterstopper-ep10")
+LABEL_DICT = parse_label_file(labels_file)
+MODEL = tf.keras.models.load_model(models_file)
 
 def preprocess_image(image, 
                      image_dims: tuple) -> Union[tf.Tensor, tuple]:
@@ -24,8 +25,6 @@ def preprocess_image(image,
         A preprocessed image with range [0, 255]
         A Tuple of the original image shape (w, h)
     """
-    # image = tf.io.read_file(image_path)
-    # image = tf.io.decode_image(image)
     image = tf.convert_to_tensor(image)
     original_shape = tf.shape(image)
     image = tf.image.resize(images=image,
@@ -39,8 +38,8 @@ def preprocess_image(image,
 
 def test(image: str, 
          image_dims: tuple, 
-         score_threshold: float = 0.3, 
-         iou_threshold: float = 0.45) -> None:
+         score_threshold: float = 0.55, 
+         iou_threshold: float = 0.3) -> None:
     """Preprocesses, Tests, and Postprocesses.
     
     Parameters:
