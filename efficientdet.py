@@ -11,7 +11,7 @@ from utils.visualize import draw_boxes
 from utils.file_reader import parse_label_file
 
 LABEL_DICT = parse_label_file("docs/labels.txt")
-MODEL = tf.keras.models.load_model("models/efficientdet-d3-shooterstopper")
+MODEL = tf.keras.models.load_model("models/efficientdet-d0-shooterstopper-ep10")
 
 def preprocess_image(image, 
                      image_dims: tuple) -> Union[tf.Tensor, tuple]:
@@ -60,8 +60,8 @@ def test(image: str,
         score_threshold=score_threshold,
         iou_threshold=iou_threshold,
         image_dims=image_dims)(
-            labels=pred_cls,
-            bboxes=pred_box)
+            labels=tf.cast(pred_cls, tf.float32),
+            bboxes=tf.cast(pred_box, tf.float32))
 
     labels = [list(LABEL_DICT.keys())[int(l)]
               for l in labels[0]]

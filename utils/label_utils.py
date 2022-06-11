@@ -51,7 +51,7 @@ def to_relative(bbox, image_dims):
     return tf.concat([x1, y1, x2, y2], axis=1)
 
 
-@tf.autograph.experimental.do_not_convert
+# @tf.autograph.experimental.do_not_convert
 def match_anchors(boxes, anchor_boxes):
     box_variance = tf.cast(
         [0.1, 0.1, 0.2, 0.2], tf.float32)
