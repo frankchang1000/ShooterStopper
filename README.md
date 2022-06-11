@@ -8,7 +8,7 @@ Ensuring **safety** for students using live security feeds and advanced AI.
 
 
 ## Table of Contents 🧾
-* [Why ShooterStopper](## Why ShooterStopper)
+* [Why ShooterStopper](why-shooterstopper)
 
 
 
