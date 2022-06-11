@@ -18,8 +18,8 @@ from efficientdet import test
 
 st.title("Webcam Live Feed")
 
-connection = database()
-timestamps = pd.read_sql_query("SELECT * FROM timestamps", connection)
+
+
 
 st.dataframe(timestamps)
 
@@ -40,6 +40,11 @@ if st.button('Start'):
             break
         frame.image(image_placeholder, channels="BGR")
         time.sleep(0.01)
+
+        connection = database(label = label)
+        timestamps = pd.read_sql_query("SELECT * FROM timestamps", connection)
+
+
 
 
 

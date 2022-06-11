@@ -3,6 +3,8 @@ import psycopg2
 
 from datetime import datetime
 
+from sklearn.semi_supervised import LabelSpreading
+from efficientdet import test
 
 
 
@@ -18,23 +20,25 @@ def exec_statement(conn, stmt):
         return
 
 
-def database():
+def database(label):
     counter = 0
+    frameCount = 0
 
     # Connect to CockroachDB
     connection = psycopg2.connect(os.environ['DATABASE_URL'])
     #if label is a knife or gun, insert timestamp into database
-    #if label == 'knife' or label == 'gun':
-        #exec_statement(connection, "INSERT INTO timestamps (timestamp) VALUES (now())")
-        
+    if label == 'knife' or label == 'pistol':
+        exec_statement(connection, f"INSERT INTO test VALUES ({counter}, '{datetime.now()}')",)
+        counter += 1
+        frameCount += 1
+
+    if frameCount >= 10:
+        print("severe threat")
+
     statements = [
         # CREATE the timestamp table
         "CREATE TABLE test IF NOT EXISTS (a INT PRIMARY KEY, b TIMESTAMPTZ)",
 
-        #remove previous data
-        #"DELETE FROM timestamps VALUES *",
-        # SELECT a row from the messages table
-        f"INSERT INTO test VALUES ({counter}, '{datetime.now()}')",
         "SELECT b FROM test"
     ]
 
