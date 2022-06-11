@@ -12,5 +12,5 @@ Ensuring **safety** for students using live security feeds and advanced AI.
 
 
 
-## Why ShooterStopper ❓
+## Why ShooterStopper❓
 As June 3rd is National Gun Violence Awareness Day, we wanted to increase recognition further by creating ShooterStopper. As the innocent lives that were lost are irreplaceable in these tragic shootings, our team wants to prevent further school shootings to ensure the safety of students everywhere. 
