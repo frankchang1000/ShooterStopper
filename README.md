@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/logo.png", width="150"/>
+  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/logo.png", width="350"/>
 </p>
 
 # ShooterStopper
