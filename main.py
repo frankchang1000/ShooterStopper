@@ -1,6 +1,10 @@
 import os
 import psycopg2
 
+from datetime import datetime
+
+
+
 
 def exec_statement(conn, stmt):
 
@@ -15,6 +19,7 @@ def exec_statement(conn, stmt):
 
 
 def database():
+    counter = 0
 
     # Connect to CockroachDB
     connection = psycopg2.connect(os.environ['DATABASE_URL'])
@@ -23,18 +28,24 @@ def database():
         #exec_statement(connection, "INSERT INTO timestamps (timestamp) VALUES (now())")
         
     statements = [
-        # CREATE the flags table
+        # CREATE the timestamp table
+        "CREATE TABLE test IF NOT EXISTS (a INT PRIMARY KEY, b TIMESTAMPTZ)",
 
-        #"CREATE TABLE timestamps IF NOT EXISTS (a INT PRIMARY KEY, b TIMESTAMPTZ)",
-        # INSERT a row into the flag table
-        #"SHOW COLUMNS FROM timestamps",
-        #"INSERT INTO timestamps VALUES (4, TIMESTAMPTZ '2016-03-26 10:10:10-05:00'), (5, TIMESTAMPTZ '2016-03-26')",
+        #remove previous data
+        #"DELETE FROM timestamps VALUES *",
         # SELECT a row from the messages table
-        "SELECT b FROM timestamps"
+        f"INSERT INTO test VALUES ({counter}, '{datetime.now()}')",
+        "SELECT b FROM test"
     ]
 
     for statement in statements:
-        exec_statement(connection, statement)
+        try:
+            exec_statement(connection, statement)
+            counter = counter + 1
+        except:
+            exec_statement(connection, "rollback")
+            exec_statement(connection, statement)
+            counter = counter + 1
 
     # Close communication with the database
     

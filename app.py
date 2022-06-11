@@ -38,7 +38,7 @@ if st.button('Start'):
 
         if not success:
             break
-        frame.image(image_placeholder, channels="BGR")
+        #frame.image(image_placeholder, channels="BGR")
         time.sleep(0.01)
 
 
