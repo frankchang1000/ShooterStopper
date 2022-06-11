@@ -16,7 +16,7 @@ Ensuring **safety** for students using live security feeds and advanced AI.
 As June 3rd is National Gun Violence Day, our team wanted to spread awareness by creating ShooterStopper. We want to prevent the innocent lives that are lost due to school shootings and the grief that the victims loved ones experience as the damage irreversible.
 
 <p align="center">
-  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/statisitics.png", width="800"/>
+  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/statistics.png", width="800"/>
 </p>
 As the Everytown Research Organization conveys the absurd amount of shootings in the past decade, we are targeting to reduce the amount of casualties and injuries to reinforce the idea of going to school safely students and parents.
 
