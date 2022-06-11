@@ -18,7 +18,10 @@ def database():
 
     # Connect to CockroachDB
     connection = psycopg2.connect(os.environ['DATABASE_URL'])
-
+    #if label is a knife or gun, insert timestamp into database
+    #if label == 'knife' or label == 'gun':
+        #exec_statement(connection, "INSERT INTO timestamps (timestamp) VALUES (now())")
+        
     statements = [
         # CREATE the flags table
 

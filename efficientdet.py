@@ -26,7 +26,7 @@ def preprocess_image(image,
     """
     # image = tf.io.read_file(image_path)
     # image = tf.io.decode_image(image)
-    image = tf.Tensor(image)
+    image = tf.convert_to_tensor(image)
     original_shape = tf.shape(image)
     image = tf.image.resize(images=image,
                             size=image_dims,
