@@ -1,4 +1,13 @@
 train_src
+EfficientDet/data/Images/*
+EfficientDet/data/Labels/*
+EfficientDet/.git
+EfficientDet/.gitignore
+EfficientDet/README.md
+EfficientDet/requirements.txt
+EfficientDet/OD-WeaponDetection/*
+EfficientDet/training_dir-000
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
