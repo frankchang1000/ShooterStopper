@@ -24,7 +24,7 @@ As the Everytown Research Organization conveys the absurd amount of shootings in
 
 ## How it Works
 <p align="center">
-  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/howitworks.png", width="800"/>
+  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/howitWorks.png", width="800"/>
 </p>
 
 
