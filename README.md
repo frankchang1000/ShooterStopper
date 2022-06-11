@@ -22,6 +22,12 @@ As the Everytown Research Organization conveys the absurd amount of shootings in
 
 
 
+## How it Works
+<p align="center">
+  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/statistics.png", width="800"/>
+</p>
+
+
 
 
 
