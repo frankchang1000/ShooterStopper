@@ -6,3 +6,4 @@ psycopg2-binary==2.9.3
 streamlit
 opencv-python
 imutils
+psycopg2
