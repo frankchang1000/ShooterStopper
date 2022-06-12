@@ -41,10 +41,10 @@ Before beginning installation, ShooterStopper wants to ensure the privacy of our
 ## Challenges 🤬
 When we first planned ShooterStopper, we originally wanted to implement the Ring API in our project that we later found inaccessible. We improvised and used webcam cameras to simulate a security camera, but we soon found the resolution and frames of the camera quality were poor as we found some input lag.
 
-Despite our setbacks, we are proud to create a working product that delivers our stance on how to defend school shootings.
+
 
 ## Accomplishments 🎆
-As school shootings have been a major conflict this decade, we are proud to face this problem with an efficent and working method. We are pleased with our AI training and with our model we were able to detect items instantly and ShooterStopper could show how simular an item detected from a camera is to an weapon.
+Despite our setbacks, we are proud to create a working product that delivers our stance on how to defend school shootings as school shootings have been a major conflict this decade. We are proud to face this problem with an efficent and working method with our AI training and model that can detect items instantly and compare how simular an item is to an weapon.
 
 We also take pride in implementing **CockroachDB's** database in our project.
 
