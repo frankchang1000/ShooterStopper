@@ -39,4 +39,4 @@ Before beginning installation, ShooterStopper wants to ensure the privacy of our
 
 ## Accomplishments 🎆
 
-As school shootings have been a major conflict this decade, we are proud to face this problem with an efficent and working method.
+As school shootings have been a major conflict this decade, we are proud to face this problem with an efficent and working method. We are pleased with our AI training and it's result displaying how simular the item detected from a camera is to an weapon. We also take pride in implementing **CockroachDB's** database in our project.
