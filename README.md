@@ -38,7 +38,7 @@ As the Everytown Research Organization conveys the absurd amount of shootings in
 ## Installation and Usage ✅
 Before beginning installation, ShooterStopper wants to ensure the privacy of our users and want to highlight that we detect **objects rather than people.**
 
-## Challenges 🤬
+## Challenges 👎
 When we first planned ShooterStopper, we originally wanted to implement the Ring API in our project that we later found inaccessible. We improvised and used webcam cameras to simulate a security camera, but we soon found the resolution and frames of the camera quality were poor as we found some input lag.
 
 
