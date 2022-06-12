@@ -34,6 +34,7 @@ function Video() {
         ctx.drawImage(video, 0, 0, width,
           height);
           setHasPhoto(true)
+
       }
     useEffect(() => {
         getVideo();

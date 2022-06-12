@@ -1,54 +1,70 @@
-<p align="center">
-  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/logo.png", width="500"/>
-</p>
+# Getting Started with Create React App
 
-# ShooterStopper
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Ensuring **safety** for students using live security feeds and advanced AI.
+## Available Scripts
 
+In the project directory, you can run:
 
-## Table of Contents 🧾
-* [Why ShooterStopper](#why-shooterstopper)
-* [How it Works](#how-it-works-)
-* [Installation and Usage](#installation-and-usage-)
-* [Challenges](#challenges-)
-* [Accomplishments](#accomplishments-)
-* [How can we improve?](#how-can-we-improve-)
-* [License](#License)
-## Why ShooterStopper❓
-As June 3rd is National Gun Violence Day, our team wanted to spread awareness by creating ShooterStopper. We want to prevent the innocent lives that are lost due to school shootings and the grief that the victims loved ones experience as the damage irreversible.
+### `npm start`
 
-<p align="center">
-  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/statistics.png", width="800"/>
-</p>
-As the Everytown Research Organization conveys the absurd amount of shootings in the past decade, we are targeting to reduce the number of school shootings that contain casualties and injuries to reinforce the idea of going to school safely students and parents.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
+### `npm test`
 
-## How it Works 💻
-<p align="center">
-  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/howitWorks.png", width="800"/>
-</p>
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-## Installation and Usage ✅
-Before beginning installation, ShooterStopper wants to ensure the privacy of our users and want to highlight that we detect **objects rather than people.**
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Challenges 🤬
-When we first planned ShooterStopper, we originally wanted to implement the Ring API in our project that we later found inaccessible. We improvised and used webcam cameras to simulate a security camera, but we soon found the resolution and frames of the camera quality were poor as we found some input lag.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Despite our setbacks, we are proud to create a working product that delivers our stance on how to defend school shootings.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Accomplishments 🎆
-As school shootings have been a major conflict this decade, we are proud to face this problem with an efficent and working method. We are pleased with our AI training and with our model we were able to detect items instantly and ShooterStopper could show how simular an item detected from a camera is to an weapon.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-We also take pride in implementing **CockroachDB's** database in our project.
+## Learn More
 
-## How can we Improve? 🤔
-In the future, ShooterStopper hopes to expand by implementing an instant notifying of law enforcement or police when a gun is spotted. 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## License
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

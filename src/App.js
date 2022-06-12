@@ -1,8 +1,8 @@
-import React from 'react';
+//import React from 'react';
 import './App.css';
-import Table from '../src/components/Table';
-import Navbar from '../src/components/Navbar';
-import Video from '../src/components/Video';
+import Table from './components/Table.js';
+import Navbar from './components/Navbar.js';
+import Video from './components/Video.js';
 
 function App() {
   return (
