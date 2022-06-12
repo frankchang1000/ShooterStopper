@@ -3,18 +3,15 @@ import psycopg2
 
 from datetime import datetime
 
-from sklearn.semi_supervised import LabelSpreading
-
-
 
 def exec_statement(conn, stmt):
-
     try:
         with conn.cursor() as cur:
             cur.execute(stmt)
             row = cur.fetchone()
             conn.commit()
-            if row: print(row[0])
+            if row:
+                print(row[0])
     except psycopg2.ProgrammingError:
         return
 
@@ -25,9 +22,10 @@ def database(label):
 
     # Connect to CockroachDB
     connection = psycopg2.connect(os.environ['DATABASE_URL'])
-    #if label is a knife or gun, insert timestamp into database
+    # if label is a knife or gun, insert timestamp into database
     if label == 'knife' or label == 'pistol':
-        exec_statement(connection, f"INSERT INTO test VALUES ({counter}, '{datetime.now()}')",)
+        exec_statement(
+            connection, f"INSERT INTO test VALUES ({counter}, '{datetime.now()}')",)
         counter += 1
         frameCount += 1
 
@@ -37,7 +35,6 @@ def database(label):
     statements = [
         # CREATE the timestamp table
         "CREATE TABLE test IF NOT EXISTS (a INT PRIMARY KEY, b TIMESTAMPTZ)",
-
         "SELECT b FROM test"
     ]
 
@@ -49,11 +46,8 @@ def database(label):
             exec_statement(connection, "rollback")
             exec_statement(connection, statement)
             counter = counter + 1
-
     # Close communication with the database
-    
     return connection
-
 
 if __name__ == "__main__":
     database()

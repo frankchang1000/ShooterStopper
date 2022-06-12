@@ -1,15 +1,13 @@
 """
-ShooterStopper Object Detection Model.
+ShooterStopper Object Detection Inference Module.
 """
 import os
 import tensorflow as tf
 
 from typing import Union
 
-from configs import *
 from utils.postprocess import FilterDetections
 from utils.visualize import draw_boxes
-from utils.file_reader import parse_label_file
 
 def preprocess_image(image, 
                      image_dims: tuple) -> Union[tf.Tensor, tuple]:
@@ -34,9 +32,11 @@ def preprocess_image(image,
 
 
 def test(image: str, 
+         model: tf.keras.Model,
+         label_dict: dict,
          image_dims: tuple = (512, 512), 
          score_threshold: float = 0.55, 
-         iou_threshold: float = 0.3) -> None:
+         iou_threshold: float = 0.3) -> tuple:
     """Preprocesses, Tests, and Postprocesses.
     
     Parameters:
@@ -51,7 +51,7 @@ def test(image: str,
     image, original_shape = preprocess_image(
         image, image_dims)
 
-    pred_cls, pred_box = MODEL(image, training=False)
+    pred_cls, pred_box = model(image, training=False)
     labels, bboxes, scores = FilterDetections(
         score_threshold=score_threshold,
         iou_threshold=iou_threshold,
@@ -59,7 +59,7 @@ def test(image: str,
             labels=tf.cast(pred_cls, tf.float32),
             bboxes=tf.cast(pred_box, tf.float32))
 
-    labels = [list(LABEL_DICT.keys())[int(l)]
+    labels = [list(label_dict.keys())[int(l)]
               for l in labels[0]]
     bboxes = bboxes[0]
     scores = scores[0]
@@ -71,6 +71,6 @@ def test(image: str,
         bboxes=bboxes,
         labels=labels,
         scores=scores,
-        labels_dict=LABEL_DICT)
+        labels_dict=label_dict)
 
     return image, labels

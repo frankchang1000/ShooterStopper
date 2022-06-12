@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import time
 from IPython import HTML
-from main import database
+from database import database
 from efficientdet import test
 
 
