@@ -38,5 +38,6 @@ As the Everytown Research Organization conveys the absurd amount of shootings in
 Before beginning installation, ShooterStopper wants to ensure the privacy of our users and want to highlight that we detect **objects rather than people.**
 
 ## Accomplishments 🎆
+As school shootings have been a major conflict this decade, we are proud to face this problem with an efficent and working method. We are pleased with our AI training and with our model we were able to detect items instantly and ShooterStopper could show how simular an item detected from a camera is to an weapon.
 
-As school shootings have been a major conflict this decade, we are proud to face this problem with an efficent and working method. We are pleased with our AI training and it's result displaying how simular the item detected from a camera is to an weapon. We also take pride in implementing **CockroachDB's** database in our project.
+We also take pride in implementing **CockroachDB's** database in our project.
