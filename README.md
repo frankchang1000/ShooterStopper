@@ -14,7 +14,7 @@ Ensuring **safety** for students using live security feeds and advanced AI.
 * [Challenges](#challenges-)
 * [Accomplishments](#accomplishments-)
 * [How can we improve?](#how-can-we-improve-)
-* [License](#License-)
+* [License](#License)
 ## Why ShooterStopper❓
 As June 3rd is National Gun Violence Day, our team wanted to spread awareness by creating ShooterStopper. We want to prevent the innocent lives that are lost due to school shootings and the grief that the victims loved ones experience as the damage irreversible.
 
