@@ -21,7 +21,7 @@ As June 3rd is National Gun Violence Day, our team wanted to spread awareness by
 <p align="center">
   <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/statistics.png", width="800"/>
 </p>
-As the Everytown Research Organization conveys the absurd amount of shootings in the past decade, we are targeting to reduce the amount of casualties and injuries to reinforce the idea of going to school safely students and parents.
+As the Everytown Research Organization conveys the absurd amount of shootings in the past decade, we are targeting to reduce the number of school shootings that contain casualties and injuries to reinforce the idea of going to school safely students and parents.
 
 
 
