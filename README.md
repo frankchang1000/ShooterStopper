@@ -13,7 +13,7 @@ Ensuring **safety** for students using live security feeds and advanced AI.
 * [Installation and Usage](#installation-and-usage-)
 * [Challenges](#challenges-)
 * [Accomplishments](#accomplishments-)
-
+* [How can we improve?](
 
 ## Why ShooterStopper❓
 As June 3rd is National Gun Violence Day, our team wanted to spread awareness by creating ShooterStopper. We want to prevent the innocent lives that are lost due to school shootings and the grief that the victims loved ones experience as the damage irreversible.
@@ -48,5 +48,5 @@ As school shootings have been a major conflict this decade, we are proud to face
 
 We also take pride in implementing **CockroachDB's** database in our project.
 
-## Whats Next? 
+## How can we Improve? 🤔
 In the future, we hope to expand by implementing an instant response to law enforcement or police when a gun is spotted in order to try to prevent loss of life.
