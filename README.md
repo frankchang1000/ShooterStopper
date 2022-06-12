@@ -9,7 +9,7 @@ Ensuring **safety** for students using live security feeds and advanced AI.
 
 ## Table of Contents 🧾
 * [Why ShooterStopper](#why-shooterstopper)
-* [How it Works](#How-it-Works)
+* [How it Works](#how-it-works-)
 
 
 
