@@ -49,6 +49,6 @@ Despite our setbacks, we are proud to create a working product that delivers our
 We also take pride in implementing **CockroachDB's** database in our project.
 
 ## How can we Improve? 🤔
-In the future, ShooterStopper hopes to expand by implementing an instant notifying of law enforcement or police when a gun is spotted. 
+In the future, ShooterStopper hopes to expand by implementing an instant notifying of law enforcement or police when a gun is spotted. Also in the future, we wish to use better cameras so we can have a detection on a weapon for 10+ frames on camera. As for now, the input delay makes movement blurry and laggy. We also hope to use TFlite for improved tracking speed.
 
 ## License
