@@ -4,9 +4,10 @@ import cv2
 import pandas as pd
 import numpy as np
 import time
-
+from IPython import HTML
 from main import database
 from efficientdet import test
+
 
 
 st.set_page_config(page_icon = ".docs/logo.png", layout="wide")
@@ -35,8 +36,10 @@ with col2:
             frame.image(image_placeholder, channels="BGR")
             time.sleep(0.01)
 
-            #connection = database(label = label)
-            # timestamps = pd.read_sql_query("SELECT * FROM timestamps", connection)
+            connection = database(label = label)
+            timestamps = pd.read_sql_query("SELECT * FROM timestamps", connection)
+
+            
             
         #st.dataframe(timestamps)
 

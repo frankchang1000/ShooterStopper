@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 
-from flask import Flask, render_template, Response
+from flask import Flask, jsonify, render_template, Response
 
 from main import database
 
@@ -51,8 +51,7 @@ def index():
 def database():
     connection = database(label = 'knife')
     timestamps = pd.read_sql_query("SELECT b FROM timestamps", connection)
-    json = timestamps.to_json(orient='records')
-    return json
+    return jsonify(timestamps)
 
 if __name__ == "__main__":
     print("Finished loading models.")
