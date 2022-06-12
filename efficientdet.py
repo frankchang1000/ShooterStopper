@@ -11,9 +11,6 @@ from utils.postprocess import FilterDetections
 from utils.visualize import draw_boxes
 from utils.file_reader import parse_label_file
 
-LABEL_DICT = parse_label_file(labels_file)
-MODEL = tf.keras.models.load_model(models_file)
-
 def preprocess_image(image, 
                      image_dims: tuple) -> Union[tf.Tensor, tuple]:
     """Preprocesses an image.
@@ -37,7 +34,7 @@ def preprocess_image(image,
 
 
 def test(image: str, 
-         image_dims: tuple, 
+         image_dims: tuple = (512, 512), 
          score_threshold: float = 0.55, 
          iou_threshold: float = 0.3) -> None:
     """Preprocesses, Tests, and Postprocesses.
