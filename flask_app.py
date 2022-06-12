@@ -2,21 +2,21 @@
 Main Flask Server.
 """
 
-from cProfile import label
 import cv2
 import pandas as pd
 import numpy as np
-import tensorflow as tf
 
-from flask import Flask, jsonify, render_template, Response
+from flask import Flask, render_template, Response, request, jsonify
+
+from datetime import datetime
 
 from main import database
 
 import efficientdet as efficientdet
 
-app = Flask(__name__, static_url_path='/templates')
+app = Flask(__name__)
 
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(1)
 
 def run_inference(frame):
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
@@ -47,11 +47,18 @@ def video_feed():
 def index():
     return render_template('React_App.html')
 
-@app.route('/database')
-def database():
-    connection = database(label = 'knife')
-    timestamps = pd.read_sql_query("SELECT b FROM timestamps", connection)
-    return jsonify(timestamps)
+@app.route('/database', methods=["GET"])
+def db():
+    if request.method == "GET":
+        print("here")
+        connection = database(label = 'pistol')
+        timestamps = pd.read_sql_query("SELECT b FROM timestamps", connection)
+        print(timestamps)
+        print("here 2")
+        data_pd = {}
+        for index, col in timestamps.iterrows():
+            data_pd[index] = str(dict(timestamps.loc[index])["b"].to_pydatetime())[0:-6]
+        return jsonify(data_pd)
 
 if __name__ == "__main__":
     print("Finished loading models.")

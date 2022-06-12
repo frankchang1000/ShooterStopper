@@ -4,7 +4,6 @@ import psycopg2
 from datetime import datetime
 
 from sklearn.semi_supervised import LabelSpreading
-from efficientdet import test
 
 
 
