@@ -71,6 +71,9 @@ code {
   .navbar .farleft img {
     width: 140px;
   }
+  .container .row .col {
+    align-items: center;
+  }
   
   
   @media only screen and (min-width: 600px) {
@@ -93,13 +96,14 @@ code {
     text-align: center;  
   }
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1ZpZGVvLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGlCQUFpQjtJQUNqQixVQUFVO0lBQ1YsZUFBZTtJQUNmLFlBQVk7SUFDWixjQUFjO0lBQ2QsYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixrQkFBa0I7RUFDcEIiLCJzb3VyY2VzQ29udGVudCI6WyJ2aWRlb3tcclxuICAgIHBhZGRpbmctdG9wOiA0MHB4O1xyXG4gICAgd2lkdGg6IDUwJTtcclxuICAgIG1heC13aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIG1hcmdpbjogMCBhdXRvO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7ICBcclxuICB9Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  
+  
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
       <div>
         <div class="navbar">
           <div class="farleft">
-            <img src="../docs/final_shoota_1.png">
+            <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/ShooterStopperlogo.png?raw=true" style = "width: 14%; height: auto;">
             <h1 style="color: white;">ShooterStopper</h1></div>
             </div>
             <div class="rightSide">
@@ -108,16 +112,21 @@ code {
             </div>
           </div>
           <div>
-            <div class="container">
-              <div class="row">
-                  <div class="col-lg-8  offset-lg-2">
-                      <h3 class="mt-5">Live Streaming</h3>
-                      <img src="{{ url_for('video_feed') }}" width="70%">
+            <div class="x">
+              <div class="y">
+                <center>
+                  <div>
+                      <img style ="padding-top: 50px" src ="{{ url_for('video_feed') }}" width="40%">
                   </div>
+                </center>
               </div>
           </div>
             <div class="result">
               <canvas></canvas>
             </div>
+        </div>
+    </div>
+  </body>
+
 </body></html>
 {% endblock %} 

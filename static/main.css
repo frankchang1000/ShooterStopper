@@ -1,0 +1,12 @@
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+.container .row .col .video-stream {
+  position: relative;
+  width: 20%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
