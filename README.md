@@ -1,5 +1,6 @@
-![ShooterStopper](https://youtu.be/N681cwQqJjQ/maxresdefault.jpg)
-
+<p align="center">
+  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/ShooterStopperlogo.png", width="300"/>
+</p>
 # ShooterStopper
 
 Ensuring **safety** for students using live security feeds and advanced AI.
