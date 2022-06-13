@@ -2,7 +2,9 @@
   <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/ShooterStopperlogo.png", width="300"/>
 </p>
 
-# ShooterStopper [DEMO VIDEO](https://youtu.be/I2G8XEkXiqo)
+# [DEMO VIDEO](https://youtu.be/I2G8XEkXiqo)
+
+# ShooterStopper 
 
 Ensuring **safety** for students using live security feeds and advanced AI.
 
