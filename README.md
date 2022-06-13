@@ -6,6 +6,8 @@
 
 Ensuring **safety** for students using live security feeds and advanced AI.
 
+*School shootings have devastated America in the last few decades by taking away innocent lives of children. In these past weeks, it seems that the school shooting cases have escalated tremendously. We developed ShooterStopper as a resource friendly and efficient program which uses artificial intelligence to inform schools when a weapon is detected by a security camera.*
+
 ## Table of Contents 🧾
 * [Why ShooterStopper](#why-shooterstopper)
 * [How it Works](#how-it-works-)
