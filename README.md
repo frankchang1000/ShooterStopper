@@ -45,6 +45,7 @@ python -m venv venv
 venv\Scripts\activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+$env:DATABASE_URL = "postgresql://frank:w1hEwgGgIXYJrFFCMUIs-w@free-tier11.gcp-us-east1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full&options=--cluster%3Dshootastoppa-1042" # This command is only required when using CockroachDB and will be deprecated in 10 days.
 python main.py
 ```
 
@@ -52,17 +53,17 @@ python main.py
 
 When we first planned ShooterStopper, we originally wanted to implement the Ring API in our project that we later found inaccessible. We improvised and used webcam cameras to simulate a security camera, but we soon found the resolution and frames of the camera quality were poor as we found some input lag.
 
-
+Furthermore, our project has the capability to expand to IP Cameras for a more realistic security solution; however we were unable to implement those as a result of time constraints.
 
 ## Accomplishments 🎆
 
 Despite our setbacks, we are proud to create a working product that delivers our stance on how to defend school shootings as school shootings have been a major conflict this decade. We are proud to face this problem with an efficent and working method with our AI training and model that can detect items instantly and compare how simular an item is to an weapon.
 
-We also take pride in implementing **CockroachDB's** database in our project.
+We also take pride in implementing **CockroachDB's** database hosting service and APIs in our project.
 
 ## How can we Improve? 🤔
 
-In the future, ShooterStopper hopes to expand by implementing an instant notifying of law enforcement or police when a gun is spotted. Also in the future, we wish to use better cameras so we can have a detection on a weapon for 10+ frames on camera. As for now, the input delay makes movement blurry and laggy. We also hope to use TFlite for improved tracking speed.
+In the future, ShooterStopper hopes to expand by implementing an instant notifying of law enforcement or police when a gun is spotted. Also in the future, we wish to use better cameras so we can have a detection on a weapon for 10+ frames on camera. As for now, the input delay and processing time makes movement blurry and laggy. We also hope to use TFlite for improved tracking speed.
 
 ## License
 
