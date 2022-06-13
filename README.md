@@ -1,11 +1,10 @@
 <p align="center">
-  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/ShooterStopperlogo.png", width="500"/>
+  <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/ShooterStopperlogo.png", width="300"/>
 </p>
 
 # ShooterStopper
 
 Ensuring **safety** for students using live security feeds and advanced AI.
-
 
 ## Table of Contents 🧾
 * [Why ShooterStopper](#why-shooterstopper)
@@ -15,6 +14,7 @@ Ensuring **safety** for students using live security feeds and advanced AI.
 * [Accomplishments](#accomplishments-)
 * [How can we improve?](#how-can-we-improve-)
 * [License](#License)
+* 
 ## Why ShooterStopper❓
 As June 3rd is National Gun Violence Day, our team wanted to spread awareness by creating ShooterStopper. We want to prevent the innocent lives that are lost due to school shootings and the grief that the victims loved ones experience as the damage irreversible.
 
@@ -23,17 +23,10 @@ As June 3rd is National Gun Violence Day, our team wanted to spread awareness by
 </p>
 As the Everytown Research Organization conveys the absurd amount of shootings in the past decade, we are targeting to reduce the number of school shootings that contain casualties and injuries to reinforce the idea of going to school safely students and parents.
 
-
-
 ## How it Works 💻
 <p align="center">
   <img src="https://github.com/frankchang1000/ShooterStopper/blob/main/docs/slides/howitWorks.png", width="800"/>
 </p>
-
-
-
-
-
 
 ## Installation and Usage ✅
 Before beginning installation, ShooterStopper wants to ensure the privacy of our users and want to highlight that we detect **objects rather than people.**
@@ -52,3 +45,11 @@ We also take pride in implementing **CockroachDB's** database in our project.
 In the future, ShooterStopper hopes to expand by implementing an instant notifying of law enforcement or police when a gun is spotted. Also in the future, we wish to use better cameras so we can have a detection on a weapon for 10+ frames on camera. As for now, the input delay makes movement blurry and laggy. We also hope to use TFlite for improved tracking speed.
 
 ## License
+
+Copyright 2022 ©Frank Chang, Thomas Chia, Ryan Dadoo, Stephen Tsai
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
