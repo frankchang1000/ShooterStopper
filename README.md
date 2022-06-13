@@ -1,4 +1,4 @@
-[ShooterStopper](https://youtu.be/N681cwQqJjQ)
+[ShooterStopper](https://youtu.be/N681cwQqJjQ/maxresdefault.jpg)
 
 # ShooterStopper
 
