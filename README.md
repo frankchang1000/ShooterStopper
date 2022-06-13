@@ -4,7 +4,7 @@
 
 # ShooterStopper 
 
-**[DEMO VIDEO](https://youtu.be/I2G8XEkXiqo)**
+**[FULL DEMO VIDEO](https://youtu.be/I2G8XEkXiqo)**
 
 Ensuring **safety** for students using live security feeds and advanced AI.
 
