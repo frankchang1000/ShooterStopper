@@ -46,7 +46,31 @@ venv\Scripts\activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 $env:DATABASE_URL = "postgresql://frank:w1hEwgGgIXYJrFFCMUIs-w@free-tier11.gcp-us-east1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full&options=--cluster%3Dshootastoppa-1042" # This command is only required when using CockroachDB and will be deprecated in 10 days.
-python main.py
+python flask_app.py
+```
+
+Once you have completed these steps; go to [localhost:5000](localhost:5000) to access the website.
+
+### Computational Requirements 🤯
+
+Your computer MUST have an **Nvidia GPU** and it MUST have a compute capability of at least 7.0 to run our software; otherwise you stand a chance damaging ur teeny weeny laptop.
+
+To check your GPU's compute capability, run the following command in CMD:
+
+```cmd
+D:\>nvidia-smi
+
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 511.65       Driver Version: 511.65       CUDA Version: 11.6     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name            TCC/WDDM | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ... WDDM  | 00000000:01:00.0 Off |                  N/A |
+| N/A   49C    P0    20W /  N/A |    409MiB /  6144MiB |      1%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
 ```
 
 ## Challenges 👎
