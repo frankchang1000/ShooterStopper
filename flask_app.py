@@ -20,7 +20,6 @@ app = Flask(__name__)
 # Alter these values to match your environment
 camera = cv2.VideoCapture(camera_number)
 
-
 def run_inference(frame):
     """
     Runs object detection inference on a single frame.
@@ -88,9 +87,8 @@ def db():
 if __name__ == "__main__":
     print("Finished loading models.")
     print("Launching the app.")
+    
     from gevent.pywsgi import WSGIServer
-
     http_server = WSGIServer(('0.0.0.0', 5000), app)
-
     print("The app will be run on localhost:{}. Press Ctrl+C to quit.".format(5000))
     http_server.serve_forever()
